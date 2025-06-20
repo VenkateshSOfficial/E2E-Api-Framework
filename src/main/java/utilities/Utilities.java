@@ -17,6 +17,7 @@ import java.util.Properties;
 public class Utilities {
 	FileInputStream fis;
 	public Properties prop;
+	public static RequestSpecification req;
 
 	public void readConfigFile() throws IOException{
 		fis = new FileInputStream(System.getProperty("user.dir")
@@ -39,14 +40,18 @@ public class Utilities {
 		return properties.getProperty(key);
 	}
 	public RequestSpecification requestSpecification() throws IOException {
-		return new RequestSpecBuilder()
-				.setBaseUri(fetchDataFromProperties("baseuri"))
-				.addQueryParam(fetchDataFromProperties("key"),fetchDataFromProperties("value"))
-				.addHeader("Content-Type", "application/json")
-				.addFilter(RequestLoggingFilter.logRequestTo(new PrintStream(Files.newOutputStream(Paths.get("src/main/java/logs/requestLogs.txt")))))
-				.addFilter(ResponseLoggingFilter.logResponseTo(new PrintStream(Files.newOutputStream(Paths.get("src/main/java/logs/responseLogs.txt")))))
-				.build();
-	}
+		if(req==null){
+			req=new RequestSpecBuilder()
+					.setBaseUri(fetchDataFromProperties("baseuri"))
+					.addQueryParam(fetchDataFromProperties("key"),fetchDataFromProperties("value"))
+					.addHeader("Content-Type", "application/json")
+					.addFilter(RequestLoggingFilter.logRequestTo(new PrintStream(Files.newOutputStream(Paths.get("src/main/java/logs/requestLogs.txt")))))
+					.addFilter(ResponseLoggingFilter.logResponseTo(new PrintStream(Files.newOutputStream(Paths.get("src/main/java/logs/responseLogs.txt")))))
+					.build();
+			return req;
+		}
+        return req;
+    }
 
 	public ResponseSpecification responseSpecification(int statusCode){
 		return new ResponseSpecBuilder()
