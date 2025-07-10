@@ -8,6 +8,7 @@ import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 import pojo.addPlacePojo.AddPlaceResponse;
+import resources.APIResources;
 import testData.TestDataBuild;
 import utilities.Utilities;
 
@@ -24,6 +25,7 @@ public class AddPlaceAPI extends Utilities {
 
     String placeId;
     String status;
+    APIResources apiResources;
 
     @Given("add place payload with {string} {string} {string}")
     public void add_place_payload_with(String name, String language, String address) throws IOException {
@@ -31,13 +33,10 @@ public class AddPlaceAPI extends Utilities {
                 .spec(requestSpecification())
                 .body(TestDataBuild.addPlacePayload(name,language,address));
     }
-    /*@Given("add place payload")
-    public void add_place_payload() throws IOException {
-        requestSpecification = given().spec(requestSpecification()).body(TestDataBuild.addPlacePayload());
-    }*/
     @When("user calls {string} with {string} http request")
-    public void user_calls_with_http_request(String string, String string2) throws IOException {
-        addPlaceApiResource = requestSpecification.when().post(fetchDataFromProperties("addPlaceApiResource"));
+    public void user_calls_with_http_request(String resource, String string2) throws IOException {
+        apiResources = APIResources.valueOf(resource);
+        addPlaceApiResource = requestSpecification.when().post(apiResources.getResource());
     }
     @Then("user validate the status code to be {string}")
     public void user_validate_the_status_code_to_be(String string) {
