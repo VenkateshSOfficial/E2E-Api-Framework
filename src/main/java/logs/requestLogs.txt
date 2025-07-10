@@ -18,7 +18,7 @@ Body:
     "accuracy": "50",
     "name": "AA house",
     "phone_number": "12345677844",
-    "address": "pillayar koil street",
+    "address": "pillar koil street",
     "types": [
         "shoe park",
         "back yard"

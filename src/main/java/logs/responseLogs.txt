@@ -1,5 +1,5 @@
 HTTP/1.1 200 OK
-Date: Fri, 13 Jun 2025 11:18:08 GMT
+Date: Fri, 20 Jun 2025 04:59:23 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -12,8 +12,27 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "0709060050aef9e3765b7afe36ee53af",
+    "place_id": "928d18188154d5280945c35771c455d9",
     "scope": "APP",
-    "reference": "e2090e89106046d860fdbeb8b1085236e2090e89106046d860fdbeb8b1085236",
-    "id": "e2090e89106046d860fdbeb8b1085236"
+    "reference": "115ff5eecfd0988dfaa7c49071291393115ff5eecfd0988dfaa7c49071291393",
+    "id": "115ff5eecfd0988dfaa7c49071291393"
+}
+HTTP/1.1 200 OK
+Date: Fri, 20 Jun 2025 04:59:23 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "49822f929b0a0d2130cd5d55655eebba",
+    "scope": "APP",
+    "reference": "e7b1b5389f87b014fca23db8df985a27e7b1b5389f87b014fca23db8df985a27",
+    "id": "e7b1b5389f87b014fca23db8df985a27"
 }
