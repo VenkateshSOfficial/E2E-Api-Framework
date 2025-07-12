@@ -81,7 +81,7 @@ public class Utilities {
 	// Perform HTTP requests using the shared RequestSpecification
 	public void performHttpRequestsCall(String resource, String httpMethodType) {
 		apiResources = APIResources.valueOf(resource);
-		System.out.println("Resolved API Resource Endpoint: " + apiResources.getResource());
+//		System.out.println("Resolved API Resource Endpoint: " + apiResources.getResource());
 
 		if (req == null) {
 			throw new RuntimeException("RequestSpecification is not initialized");
@@ -89,17 +89,17 @@ public class Utilities {
 
 		switch (httpMethodType.toUpperCase()) {
 			case "GET":
-				System.out.println("Performing GET operation...");
+//				System.out.println("Performing GET operation...");
 				addPlaceApiResource = req.when().get(apiResources.getResource());
 				break;
 
 			case "POST":
-				System.out.println("Performing POST operation...");
+//				System.out.println("Performing POST operation...");
 				addPlaceApiResource = req.when().post(apiResources.getResource());
 				break;
 
 			case "DELETE":
-				System.out.println("Performing DELETE operation...");
+//				System.out.println("Performing DELETE operation...");
 				addPlaceApiResource = req.when().delete(apiResources.getResource());
 				break;
 

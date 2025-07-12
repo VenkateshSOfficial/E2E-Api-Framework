@@ -1,5 +1,5 @@
 HTTP/1.1 200 OK
-Date: Fri, 11 Jul 2025 14:40:23 GMT
+Date: Sat, 12 Jul 2025 13:37:36 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -12,13 +12,13 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "647bfdf30dbd53de77f44e416aba2e08",
+    "place_id": "e227ca3782b47a5c56f1e3b0d231533b",
     "scope": "APP",
-    "reference": "2df9598901e06517f17a63b03c1bc8712df9598901e06517f17a63b03c1bc871",
-    "id": "2df9598901e06517f17a63b03c1bc871"
+    "reference": "ce7c4fb2d100decf396c40d04ea8546bce7c4fb2d100decf396c40d04ea8546b",
+    "id": "ce7c4fb2d100decf396c40d04ea8546b"
 }
 HTTP/1.1 200 OK
-Date: Fri, 11 Jul 2025 14:40:24 GMT
+Date: Sat, 12 Jul 2025 13:37:36 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -31,8 +31,46 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "6fb741d5673609adca927397078deb37",
+    "place_id": "5bd9018c4394ffa8fe7a315ae8b8f17c",
     "scope": "APP",
-    "reference": "4708a313b17c5f21fb942c7cb43b9c394708a313b17c5f21fb942c7cb43b9c39",
-    "id": "4708a313b17c5f21fb942c7cb43b9c39"
+    "reference": "8bfe2b8e8e6e41bdf127aeb3322ecddd8bfe2b8e8e6e41bdf127aeb3322ecddd",
+    "id": "8bfe2b8e8e6e41bdf127aeb3322ecddd"
+}
+HTTP/1.1 200 OK
+Date: Sat, 12 Jul 2025 13:37:36 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "e5e97d375743ab9d8e2531adb286b8ef",
+    "scope": "APP",
+    "reference": "a1c07b7e7d6aa8049bd0fa7f214a4bd8a1c07b7e7d6aa8049bd0fa7f214a4bd8",
+    "id": "a1c07b7e7d6aa8049bd0fa7f214a4bd8"
+}
+HTTP/1.1 200 OK
+Date: Sat, 12 Jul 2025 13:37:37 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "39dd38c7cfc607ded745458d175bb8ba",
+    "scope": "APP",
+    "reference": "2dfcb807e6d77485ffc7733a58dae6b22dfcb807e6d77485ffc7733a58dae6b2",
+    "id": "2dfcb807e6d77485ffc7733a58dae6b2"
 }
