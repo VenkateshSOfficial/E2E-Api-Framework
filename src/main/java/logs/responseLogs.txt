@@ -1,5 +1,5 @@
 HTTP/1.1 200 OK
-Date: Fri, 20 Jun 2025 04:59:23 GMT
+Date: Fri, 11 Jul 2025 14:40:23 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -12,13 +12,13 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "928d18188154d5280945c35771c455d9",
+    "place_id": "647bfdf30dbd53de77f44e416aba2e08",
     "scope": "APP",
-    "reference": "115ff5eecfd0988dfaa7c49071291393115ff5eecfd0988dfaa7c49071291393",
-    "id": "115ff5eecfd0988dfaa7c49071291393"
+    "reference": "2df9598901e06517f17a63b03c1bc8712df9598901e06517f17a63b03c1bc871",
+    "id": "2df9598901e06517f17a63b03c1bc871"
 }
 HTTP/1.1 200 OK
-Date: Fri, 20 Jun 2025 04:59:23 GMT
+Date: Fri, 11 Jul 2025 14:40:24 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -31,8 +31,8 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "49822f929b0a0d2130cd5d55655eebba",
+    "place_id": "6fb741d5673609adca927397078deb37",
     "scope": "APP",
-    "reference": "e7b1b5389f87b014fca23db8df985a27e7b1b5389f87b014fca23db8df985a27",
-    "id": "e7b1b5389f87b014fca23db8df985a27"
+    "reference": "4708a313b17c5f21fb942c7cb43b9c394708a313b17c5f21fb942c7cb43b9c39",
+    "id": "4708a313b17c5f21fb942c7cb43b9c39"
 }
