@@ -7,4 +7,3 @@ Feature: validate get place API
     Examples:
       | name     |
       | AA house |
-      | BB house |

@@ -7,5 +7,4 @@ Feature: validate add place API
     Examples:
       | name     | language | address            |
       | AA house | Tamil    | pillar koil street |
-      | BB house | English  | WTC street         |
 

@@ -26,11 +26,12 @@ Body:
     "website": "https://www.happy.com",
     "language": "Tamil"
 }
-Request method:	POST
-Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=50cbd2016f6bd83c9a552bb3d54062e6
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=qaclick123
+				place_id=50cbd2016f6bd83c9a552bb3d54062e6
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -44,13 +45,13 @@ Body:
         "lng": "45.2308723"
     },
     "accuracy": "50",
-    "name": "BB house",
+    "name": "AA house",
     "phone_number": "12345677844",
-    "address": "WTC street",
+    "address": "pillar koil street",
     "types": [
         "shoe park",
         "back yard"
     ],
     "website": "https://www.happy.com",
-    "language": "English"
+    "language": "Tamil"
 }

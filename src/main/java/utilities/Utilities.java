@@ -79,34 +79,40 @@ public class Utilities {
 	}
 
 	// Perform HTTP requests using the shared RequestSpecification
-	public void performHttpRequestsCall(String resource, String httpMethodType) {
+	public Response performHttpRequestsCall(String resource, String httpMethodType) {
+		// Ensure req is initialized
+		if (req == null) {
+			throw new RuntimeException("RequestSpecification is null. Initialize it before making the API call.");
+		}
+
+		// Resolve the resource endpoint from the APIResources enum
 		apiResources = APIResources.valueOf(resource);
 		System.out.println("Resolved API Resource Endpoint: " + apiResources.getResource());
 
-		if (req == null) {
-			throw new RuntimeException("RequestSpecification is not initialized");
-		}
+		// Response object to store the API response
+		Response response;
 
+		// Determine the HTTP method
 		switch (httpMethodType.toUpperCase()) {
 			case "GET":
-				System.out.println("Performing GET operation...");
-				addPlaceApiResource = req.when().get(apiResources.getResource());
+				response = req.when().get(apiResources.getResource());
 				break;
-
 			case "POST":
-				System.out.println("Performing POST operation...");
-				addPlaceApiResource = req.when().post(apiResources.getResource());
+				response = req.when().post(apiResources.getResource());
 				break;
-
 			case "DELETE":
-				System.out.println("Performing DELETE operation...");
-				addPlaceApiResource = req.when().delete(apiResources.getResource());
+				response = req.when().delete(apiResources.getResource());
 				break;
-
+			case "PUT":
+				response = req.when().put(apiResources.getResource());
+				break;
 			default:
-				throw new UnsupportedOperationException("Unsupported HTTP method: " + httpMethodType);
+				throw new UnsupportedOperationException("Unsupported HTTP method type: " + httpMethodType);
 		}
 
-		System.out.println("Response Status Code: " + addPlaceApiResource.getStatusCode());
+		// Log status code and assign response
+		System.out.println("Response Status Code: " + response.getStatusCode());
+		addPlaceApiResource = response; // Important: Save the response in addPlaceApiResource if required
+		return response;
 	}
 }
